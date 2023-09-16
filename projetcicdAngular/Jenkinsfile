@@ -16,9 +16,9 @@ pipeline{
 		}
 		stage('deploy'){
 		    steps{
-				sh 'sudo rm -rv /var/www/html/'
-				sh 'sudo mkdir -p /var/www/html/rhv2'
-				sh 'sudo cp -rv ./projetCICD/* /var/www/html/rhv2'
+				sh 'sudo rm -rv /var/www/html/test'
+				sh 'sudo mkdir -p /var/www/html/test'
+				sh 'sudo cp -rv ./projetCICD/* /var/www/html/test'
 			}
 		}
 	}
